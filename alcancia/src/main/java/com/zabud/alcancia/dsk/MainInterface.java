@@ -79,19 +79,19 @@ public class MainInterface extends JFrame {
 		mainPanel.add(UtilityLabels.subtitulos("De click sobre una moneda para agregarla a la alcancia", 70, ancho, 
         		20), BorderLayout.NORTH);
 		panelBotones = UtilityButtons.panelDeBotones(ancho);
-		button50 = UtilityButtons.crearBoton("./src/main/resources/img/50.png");
+		button50 = UtilityButtons.crearBoton("/img/50.png");
 		panelBotones.add(button50, UtilityButtons.crearGridBag(0, 0));
-		button100 = UtilityButtons.crearBoton("./src/main/resources/img/100.png");
+		button100 = UtilityButtons.crearBoton("/img/100.png");
 		panelBotones.add(button100, UtilityButtons.crearGridBag(1, 0));
-		button200 = UtilityButtons.crearBoton("./src/main/resources/img/200.png");
+		button200 = UtilityButtons.crearBoton("/img/200.png");
 		panelBotones.add(button200, UtilityButtons.crearGridBag(2, 0));
-		button500 = UtilityButtons.crearBoton("./src/main/resources/img/500.png");
+		button500 = UtilityButtons.crearBoton("/img/500.png");
 		panelBotones.add(button500, UtilityButtons.crearGridBag(3, 0));
-		button1000 = UtilityButtons.crearBoton("./src/main/resources/img/1000.png");
+		button1000 = UtilityButtons.crearBoton("/img/1000.png");
 		panelBotones.add(button1000, UtilityButtons.crearGridBag(4, 0));
 		mainPanel.add(panelBotones);
 		
-		mainPanel.add(UtilityLabels.subtitulos("Esta es la cantidad de monetas por denominación", 190, ancho, 20), 
+		mainPanel.add(UtilityLabels.subtitulos("Esta es la cantidad de monedas por denominación", 190, ancho, 20), 
         		BorderLayout.NORTH);
         panelCantidades = UtilityCuantities.panelDeCantidades(ancho);
         cantidad50 = UtilityCuantities.etiquetas("0", Font.BOLD, 18);

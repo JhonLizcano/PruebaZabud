@@ -3,7 +3,6 @@ package com.zabud.alcancia.dsk;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -33,7 +32,7 @@ public class CustomButton extends JButton{
     private void createButton(){
     	BufferedImage img;
 		try {
-			img = ImageIO.read(new File(imagen));
+			img = ImageIO.read(getClass().getResourceAsStream(imagen));
 			Image dimg = img.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH);
 			this.setIcon(new ImageIcon(dimg));
 		} catch (IOException e) {

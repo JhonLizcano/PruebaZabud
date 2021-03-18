@@ -3,7 +3,6 @@ package com.zabud.alcancia.dsk;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -33,7 +32,7 @@ public class MainPanel extends JPanel{
 			super.paintComponent(g);
 			BufferedImage img;
 			try {
-				img = ImageIO.read(new File("./src/main/resources/img/alcancia.png"));
+				img = ImageIO.read(getClass().getResourceAsStream("/img/alcancia.png"));
 				Image dimg = img.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH);
 				g.drawImage(dimg, 0, 0, null);
 			} catch (IOException e) {
